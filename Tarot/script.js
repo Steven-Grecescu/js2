@@ -1,4 +1,4 @@
-let NbTirage = 0;
+var NbTirage = 0;
 let save = [];
 let desc = ["J’avance vers l’inconnu. Je suis en route vers mon destin. Je poursuis ma voie personnelle. Je prends le risque d’aller de l’avant vers un chemin nouveau. Je voyage. Je me libère des contraintes et des exigences sociales. Je vais à ma façon originale. Je pars vers des aventures nouvelles. J’avance avec mon intuition et mon expérience."
     ,"C’est le début de tout. Je montre mes capacités. J’existe. Je m’affirme. Je fais des projets. J’ose entreprendre et je teste des choses nouvelles. Je suis d’un tempérament actif. J’ai un esprit jeune et dynamique. J’ai une joie de vivre. J’aime bien m’amuser.C’est une situation nouvelle qui commence et tout est encore possible."
