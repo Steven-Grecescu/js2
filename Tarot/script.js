@@ -54,6 +54,10 @@ if(save.includes(random)){
         div.style.display = "inline-block";
         div.style.width = "27%";
         }
+
+
+
+        
         // else{
         //     let btnTirage = getElementById("btnTirage");
         //     let btnRetry = document.createElement("button");
