@@ -1,43 +1,95 @@
 body{
+  display: flex;
+  flex-direction: column;
     font-family: Arial, sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
+    height: 100vh;
+    width: 100vh;
     margin: 0;
-    background: linear-gradient(rgb(192, 192, 192), rgb(19, 34, 41));
+    background: linear-gradient(rgb(102, 117, 122), rgb(166, 173, 177));
+    justify-content: center;
+    align-items: center;
+
+}
+header{
+
+
+
+
+  width: 100%;
+  height: 100px;
+
+
+}
+
+nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  background-color: rgb(48, 47, 47);
+  position: fixed;
+  top: 0;
+   ul{
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     text-decoration: none;
+     width: 100%;
+     height: 100px;
+     li{
+       list-style: none;
+       width: 100px;
+       height: 100px;
+       text-align: center;
+       line-height: 100px;
+       font-size: 25px;
+       color: rgb(255, 255, 255);
+
+       a{
+         text-decoration: none;
+         color: rgb(255, 255, 255);
+         cursor: pointer;
+       }
+     }
+   }
+  
 }
 h1{
     font-size: 40px;
     font-weight: bold;
     text-align: center;
+    margin-left: 87%;
+    width: 100%;
 }
 
 .currency-container{
-    background: linear-gradient(rgb(128, 125, 122), rgb(255, 255, 255));
-    padding: 20px;
-    border-radius: 50px;
-    margin: 20px;
+  display: flex;
+  flex-direction: column;
+    background: linear-gradient(rgb(86, 94, 94), rgb(228, 226, 226));
+    padding: 50px;
+    margin: 50px;
+    margin-left: 90%;
+    border-radius: 10px;
     box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.4);
-    display:flex ;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 15%;
-    height: 100%;
+    width: 800px;
+    height: 250px;
 }
 
 #Val1{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    height: 25px;
+    width: 400px;
     margin: 20px;
+    margin-right: 0;
     padding: 5px;
-    border-radius: 50px;
-    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
-    
-
+}
+#ValMontant{
+position: absolute;
+bottom: 323px;
+left: 1056px;
+  width: 10px;
+  height: 25px;
 }
 
 input::-webkit-outer-spin-button,
@@ -46,222 +98,260 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
+#currency1{
+height: 100px;
+width: 40%;
+}
+
+#currency2{
+height: 100px;
+width: 40%;
+}
+
 #devise1{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin: 20px;
-    margin-left: 35px;
-    padding: 5px;
-    border-radius: 50px;
-    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
-    cursor: pointer;
+  width: 250px;
+  height: 50px;
+  margin: 20px;
+  margin-left: 35px;
+  padding: 5px;
+  text-align: center;
+  cursor: pointer;
 
     
 }
 
 #devise2{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    width: 250px;
+    height: 50px;
     margin: 20px;
     padding: 5px;
-    border-radius: 50px;
-    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+    text-align: center;
     cursor: pointer;
+}
+#currency-container2{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+}
+#divresult{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 5px;
 
 }
 
+#divresult2{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+
+}
+
+#result{
+  margin-right: 210px;
+  background-color: white;
+  width: 150px;
+  height: 25px;
+  padding-top: 5px;
+  border-radius: 5px;
+  
+
+}
+
+#taux{
+
+  background-color: white;
+  width: 150px;
+  height: 25px;
+  padding-top: 5px;
+  border-radius: 5px;
+  
+
+}
 button{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    height:30px;
     margin: 5px;
     padding: 5px;
-    border-radius: 50px;
-    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+    width: 150px;
     cursor: pointer;
+    text-align: center;
+    justify-content: center;
 }
 
 button:hover{
-    background-color: rgb(204, 202, 202);
+    background-color: rgb(223, 219, 219);
 }
 
-
-/* ////////////////// */
-/* 
-*,
-::before,
-::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+img{
+  width: 50px;
+  height: 50px;
+  margin-top: 20px;
 }
 
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #111111;
+img:hover{
+  cursor: pointer;
 }
 
-.card {
-  position: relative;
-  width: 300px;
-  height: 300px;
-  color: #fff;
-  border-top: 1px solid rgba(255, 49, 49, 0.5);
-  border-right: 1px solid rgba(0, 255, 255, 0.5);
-  border-bottom: 1px solid rgba(57, 255, 20, 0.5);
-  border-left: 1px solid rgba(255, 255, 113, 0.5);
-  font-family: sans-serif;
+label{
+margin-right: 10px;
+
+
+}
+
+@media(max-width:440px){
+  body{
+    display: flex;
+    flex-direction: column;
+      font-family: Arial, sans-serif;
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      background: linear-gradient(rgb(102, 117, 122), rgb(166, 173, 177));
+      justify-content: center;
+      align-items: center;
+  }
+
+  nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    background-color: rgb(48, 47, 47);
+    position: fixed;
+    top: 0;
+     ul{
+      margin-top: 30px;
+       display: flex;
+       flex-direction: row;
+       align-items: center;
+       text-decoration: none;
+       width: 100%;
+       height: 100px;
+       li{
+         list-style: none;
+         width: 50px;
+         height: 100px;
+         text-align: center;
+         line-height: 100px;
+         font-size: 15px;
+         color: rgb(255, 255, 255);
+  
+         a{
+           text-decoration: none;
+           color: rgb(255, 255, 255);
+           cursor: pointer;
+         }
+       }
+     }
+    
+  }
+  h1{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 0%;
+    width: 100%;
+}
+  
+ .currency-container{
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  padding: 1em;
-}
+        width: 250px;
+        height: 250px;
+        margin-left:50px;
+    }
 
-p {
-  font-size: 0.95rem;
-  text-align: center;
-}
-
-span {
-  position: absolute;
-  border-radius: 100vmax;
-}
-
-.top {
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 5px;
-  background: linear-gradient(
-    90deg,
-
-    rgba(255, 49, 49, 0.5),
-    rgb(255, 49, 49)
-  );
-}
-
-.bottom {
-  right: 0;
-  bottom: 0;
-  height: 5px;
-  background: linear-gradient(
-    90deg,
-    rgb(57, 255, 20),
-    rgba(57, 255, 20, 0.5),
+    #devise1{
+      width: 60px;
+      height: 50px;
+      margin: 20px;
+      margin-left: 5px;
+      padding: 5px;
+      text-align: center;
+      cursor: pointer;  
+    }
     
-  );
+    #devise2{
+        width: 60px;
+        height: 50px;
+        margin: 20px;
+        margin-right: 5px;
+        padding: 5px;
+        text-align: center;
+        cursor: pointer;
+    }
+    #Val1{
+      height: 25px;
+      width: 200px;
+      margin: 20px;
+      padding: 5px;
+  }
+  button{
+    display: flex;
+    height:30px;
+    margin: 5px;
+    padding: 5px;
+    width: 100px;
+    cursor: pointer;
+    text-align: center;
+    justify-content: center;
+}
+p{
+  text-align: center;
+  font-size: 15px;
+  width: 300px;
 }
 
-.right {
-  top: 0;
-  right: 0;
-  width: 5px;
-  height: 0;
-  background: linear-gradient(
-    180deg,
-   
-    rgba(0, 255, 255, 0.5),
-    rgb(0, 255, 255)
-  );
+#divresult2{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+
 }
 
-.left {
-  left: 0;
-  bottom: 0;
-  width: 5px;
-  height: 0;
-  background: linear-gradient(
-    180deg,
-    rgb(255, 255, 113),
-    rgba(255, 255, 113, 0.5),
+#result{
+  margin-right: 20px;
+  background-color: white;
+  width: 70px;
+  height: 25px;
+  
 
-  );
 }
 
-.top {
-  animation: animateTop 3s ease-in-out infinite;
+#taux{
+
+  background-color: white;
+  width: 70px;
+  height: 25px;
+
+}
+label{
+  width: 60px;
+
 }
 
-.bottom {
-  animation: animateBottom 3s ease-in-out infinite;
+ #ValMontant{
+  position: absolute;
+  bottom: 296px;
+  left: 240px;
+    width: 10px;
+    height: 25px;
+  } 
 }
 
-.right {
-  animation: animateRight 3s ease-in-out infinite;
-}
-
-.left {
-  animation: animateLeft 3s ease-in-out infinite;
-}
-
-@keyframes animateTop {
-  25% {
-    width: 100%;
-    opacity: 1;
-  }
-
-  30%,
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes animateBottom {
-  0%,
-  50% {
-    opacity: 0;
-    width: 0;
-  }
-
-  75% {
-    opacity: 1;
-    width: 100%;
-  }
-
-  76%,
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes animateRight {
-  0%,
-  25% {
-    opacity: 0;
-    height: 0;
-  }
-
-  50% {
-    opacity: 1;
-    height: 100%;
-  }
-
-  55%,
-  100% {
-    height: 100%;
-    opacity: 0;
-  }
-}
-
-@keyframes animateLeft {
-  0%,
-  75% {
-    opacity: 0;
-    bottom: 0;
-    height: 0;
-  }
-
-  100% {
-    opacity: 1;
-    height: 100%;
-  }
-} */

@@ -7,29 +7,40 @@
     <title>Convertiseur devises</title>
 </head>
 <body>
-    <!-- <article class="card"> -->
+    <header>
+<nav>
+    <ul>
+        <li><a href="#"></a></li>
+        <li><a href="../index.html">Meteo</a></li>
+        <li><a href="./index.html">Convertisseur</a></li>
+    </ul>
+</nav>
+    </header>
+
+
+    <h1 id="currency-name">Convertisseur De Devise</h1>
     <div class="currency-container">
-        <div>
-        <h1 id="currency-name">Convertisseur</h1>
-        <select name="" id="devise1">
-            <option value="EUR">Choissez la premiere devise</option>
-            <option value="USD">USD</option>
+<div id="currency-container2">
+    <img  id="imgDeviseGauche" src="./img/EUR.png" alt="">
+        <div id="currency1">
+        <select onchange="ImgDeviseGauche()" name="" id="devise1">
             <option value="EUR">EUR</option>
+            <option value="USD">USD</option>
             <option value="GBP">GBP</option>
             <option value="JPY">JPY</option>
             <option value="AUD">AUD</option>
             <option value="CAD">CAD</option>
             <option value="CHF">CHF</option>
             <option value="CNY">CNY</option>
-
         </select>
 
         </div>
-        <input type="number" id="Val1" placeholder="Entrez le montant">
-        <div>
+<div>
+    <img onclick="Interchanger()" src="./img/transfer.png" alt="">
+</div>
+        <div id="currency2">
 
-        <select name="" id="devise2">
-            <option value="EUR">Choissez la seconde devise</option>
+        <select onchange="ImgDeviseDroite()" name="" id="devise2">
             <option value="USD">USD</option>
             <option value="EUR">EUR</option>
             <option value="GBP">GBP</option>
@@ -38,22 +49,26 @@
             <option value="CAD">CAD</option>
             <option value="CHF">CHF</option>
             <option value="CNY">CNY</option>
-                
         </select>
-
+</div>
+<img  id="imgDeviseDroite" src="./img/USD.png" alt="">
     </div>
 
-        <!-- <span class="top"></span>
-        <span class="right"></span>
-        <span class="bottom"></span>
-        <span class="left"></span>
-      </article> -->
-    
-
+    <div id="divresult">
+        <div>
+<input type="number" id="Val1" placeholder="Entrez le montant"> 
+<label id="ValMontant" for="">EUR</label>
+</div>
 <button onclick="Valider()">Convertir</button>
+
+<div id="divresult2" >
+    <label for="">Valeur </label>
 <p id="result"></p>
+<label for="">Taux  </label>
+<p id="taux"></p>
+</div>
 
-
+</div>
 
 </div>
 
