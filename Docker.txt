@@ -1,0 +1,33 @@
+Conteneur : une boite qui contien different programme qui sera possible d'utiliser pour deploiyer un service web == un serveur
+Créer un conteneur : pour crée un contenuer il faut une image 
+Une image : contien toute les information pour créer un conteneur en d'autre terme un contenuer va se baser sur une image pour se construire 
+
+une classe c'est une image, une instance c'est un conteneur 
+
+DockerHub : site qui permet de rechercher une image specifique pour la telecharger sur notre machine et ainsi crée un conteneur qui est baser sur cette image
+DockerFile : Fichier qui permet de crée une image personaliser a partir d'une qui existe déjà 
+Docker-Compose.yml : fichier qui permet de créer notre propre configuration de conteneur qui seront relier les uns aux autres
+
+Interet de docker : 
+-
+- On peu tester des versions de logiciel 
+- On peu travailler en équipe peu importe l'OS que l'on utilise 
+
+commandes pour lancer un contenair hello-world : docker run hello-world
+
+
+1- BIOS (De F1 a F12 en fonction des ordis au moment du démarrage) -> activer la virtualisation
+2-Aller dans fonctionalités de windows et cocher Hyper-V ainsi que Sous-système windows pour linux
+3-Telecharger ubuntu via le windows store
+4-Telecharger Docker
+-Laisser les 2 options cocher
+
+Lister les conteneur : docker ps -a  OU docker container ls -a 
+docker ps : liste les conteneur operationnel 
+Lister les images : docker image ls OU docker images
+Supprimer un conteneur : docker rm CONTAINER-ID 
+Supprimer plusieurs conteneur : docker rm CONTAINER-ID CONTAINER-ID CONTAINER-ID etc...
+Supprimer des images : docker rm IMAGE-ID 
+
+
+
