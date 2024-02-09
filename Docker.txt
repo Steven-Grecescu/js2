@@ -29,5 +29,8 @@ Supprimer un conteneur : docker rm CONTAINER-ID
 Supprimer plusieurs conteneur : docker rm CONTAINER-ID CONTAINER-ID CONTAINER-ID etc...
 Supprimer des images : docker rm IMAGE-ID 
 
+apt update : met a jour linux
+apt-get install iputils-ping : installe la commande ping
+apt-get install iproute2 : installe la commande ip
 
-
+docker network ls : liste les reseau docker 
